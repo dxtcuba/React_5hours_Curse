@@ -3,23 +3,29 @@
 
 import React, {component, useState} from "react"
 
-// function App() {
-//     const [answer]= useState("yes")
-//     console.log(answer)
-
-//     return(
-//         <div>
-//             <h1>Is state important to know? {answer}</h1>
-//         </div>
-//     )
-// }
-
 function App() {
-    const [count]
+    const [count, setCount] = useState(0)
+    const [answer, setAnswer] = useState("yes")
+
+    function increment(){
+        setCount(prevCount => prevCount + 1)
+    }
+    function decrement(){
+        setCount(prevCount => prevCount - 1)
+    }
+    function double(){
+        setCount(prevCount => prevCount * 2)
+    }
+    function divide(){
+        setCount(prevCount => prevCount / 2)
+    }
     return (
         <div>
             <h1>{count}</h1>
-            <button>Change!</button>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
+            <button onClick={double}>Double</button>
+            <button onClick={divide}>Divide</button>
         </div>
     )
 }

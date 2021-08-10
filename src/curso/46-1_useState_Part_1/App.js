@@ -1,8 +1,15 @@
 import React, {useState} from "react"
 
 function App() {
-    const [answer]= useState("yes")
+    const [answer]= useState("no")
     console.log(answer)
+
+    // const person = {
+    //     name: "Joe",
+    //     age: 42
+    // }
+    
+    // const { name, age } = person 
 
     return(
         <div>
