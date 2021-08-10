@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 //import './curso/12_Styling_React_with_CSS_Classes/style.css'
 import './curso/45_Meme_Generator_Capstone_Project/style.css'
 
-import App from './curso/46-2_useState_Part_2/App'
+import App from './curso/46-4_useEffect_Part2/App'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
